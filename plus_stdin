@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# SPDX-FileCopyRightText: 2024 Shota Kaneko
 import sys
 
 ans = 0
