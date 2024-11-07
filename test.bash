@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 ng () {
 	echo ${1}が違うよ
@@ -6,7 +6,18 @@ ng () {
 }
 res=0
 
+###正常石井###
 out=$(seq 5 | ./plus)
-[ "$out" = 15 ] || ng "$LINENO"
+[ "${out}" = 15 ] || ng "$LINENO"
+
+###変な入力###
+out=$(seq あ | ./plus)
+[ "$?" = 0 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(seq  | ./plus)
+[ "$?" = 0 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
 [ "$res" = 0 ] && echo OK
 exit "$res"
