@@ -1,4 +1,4 @@
-#!/bin/bash  -xv
+#!/bin/bash  
 
 ng () {
 	echo ${1}が違うよ
