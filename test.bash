@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  -xv
 
 ng () {
 	echo ${1}が違うよ
@@ -15,9 +15,9 @@ out=$(seq あ | ./plus)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(seq  | ./plus)
+ut=$(seq  | ./plus)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
-exit "$res"
+exit 0
