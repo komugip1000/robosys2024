@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+# SPDX-FileCopyRightText: 2024 Shota Kaneko
+# SPDX-License-Identifier: BSD-3-Clause
+
+un = 0
+chin = 0
+ko = 1
+k = int(input("生成したい数列の個数を20576以下で入力してください:"))
+
+if (k > 0  k < 20577):
+    for i in range(0, k):
+        chin = un + ko
+        un = ko
+        ko = chin
+        print(chin)
+
+elif (k > 20576):
+    print("もっと少ない数を入力してください")
+
+else:
+    print("自然数を入力してください")
