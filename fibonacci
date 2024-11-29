@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+# SPDX-FileCopyRightText: 2024 Shota Kaneko
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+
+un = 0
+chin = 0
+ko = 1
+k = int(sys.argv[1])
+
+if (k > 0 and k < 20577):
+    print(1)
+    for i in range(1, k):
+        chin = un + ko
+        un = ko
+        ko = chin
+        print(chin)
+
+elif (k > 20576):
+    print("もっと少ない数を入力してください")
+
+else:
+    print("自然数を入力してください")
