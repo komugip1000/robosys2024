@@ -1,11 +1,6 @@
 #!/usr/bin/python3
-<<<<<<< HEAD:plus_stdin
-# SPDX-FileCopyfightText: 2024 Shota kaneko
-
-=======
 # SPDX-FileCopyRightText: 2024 Shota Kaneko
 # SPDX-License-Identifier: BSD-3-Clause
->>>>>>> dev:plus
 import sys
 
 ans = 0

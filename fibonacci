@@ -8,18 +8,19 @@ import sys
 un = 0
 chin = 0
 ko = 1
-k = int(sys.argv[1])
+nyo = []
 
+for ama in sys.stdin:
+    k = int(ama.strip())
 if (k > 0 and k < 20577):
-    print(1)
+    nyo.append(1)
     for i in range(1, k):
         chin = un + ko
         un = ko
         ko = chin
-        print(chin)
+        nyo.append(chin)
 
-elif (k > 20576):
+print(*nyo)
+
+if (k > 20576):
     print("もっと少ない数を入力してください")
-
-else:
-    print("自然数を入力してください")
