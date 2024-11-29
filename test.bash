@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash 
 
 ng () {
 	echo ${1}が違うよ
@@ -13,25 +13,28 @@ out=$(seq 5 | ./plus)
 
 
 ###fibonacci###
-out=$(echo "3" | ./fibonacci)
+out=$( ./fibonacci 5 )
 [ "$?" = 0 ] || ng "$LINENO"
 
-out=$(echo "530000" | ./fibonacci)
+out=$( ./fibonacci 530000 )
 [ "$?" = 0 ] || ng "$LINENO"
 
-out=$(echo "0" | ./fibonacci)
+out=$( ./fibonacci 0 )
 [ "$?" = 0 ] || ng "$LINENO"
 
-out=$(echo "-3" | ./fibonacci)
+out=$( ./fibonacci -3 )
 [ "$?" = 0 ] || ng "$LINENO"
 
-out=$(echo "3.5" | ./fibonacci)
+out=$( ./fibonacci 3.5 )
 [ "$?" = 1 ] || ng "$LINENO"
 
-out=$(echo "a" | ./fibonacci)
+out=$( ./fibonacci a )
 [ "$?" = 1 ] || ng "$LINENO"
 
-out=$(echo "?" | ./fibonacci)
+out=$( ./fibonacci )
+[ "$?" = 1 ] || ng "$LINENO"
+
+out=$( ./fibonacci ? )
 [ "$?" = 1 ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
