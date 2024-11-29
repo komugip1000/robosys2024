@@ -1,19 +1,19 @@
 # robosys2024
 
-このプロジェクトは千葉工業大学未来ロボティクス学科ロボットシステム学2024の授業内で行われたものを改造して製作しています
+このプロジェクトは千葉工業大学未来ロボティクス学科ロボットシステム学2024の授業内で行われたものを改造して製作
 
 [![test](https://github.com/komugip1000/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/komugip1000/robosys2024/actions/workflows/test.yml)
 
 
 ## plus&fibonacci
 
-- plusは数列の足し算をするプログラムです。
-- fibonacciはフィボナッチ数列を生成するプログラムです。
+- plusは数列の足し算をするプログラム
+- fibonacciはフィボナッチ数列を生成するプログラム
 
 
 ## インストール方法
 
-以下の手順でプロジェクトをローカル環境にインストールしてください。
+以下のコマンドでプロジェクトをローカル環境にインストール
 ```
 $ git clone https://github.com/komugip1000/robosys2024.git
 ```
@@ -57,7 +57,7 @@ $ seq 5 | ./plus
 
 ## 応用例
 
-この二つのプログラムをパイプを用いて両方実行すれば、フィボナッチ数列の足し算ができる
+この二つのプログラムをパイプを用いて実行すると、フィボナッチ数列の足し算ができる
 ```
 $ ./fibonacci 5 | ./plus
 12
