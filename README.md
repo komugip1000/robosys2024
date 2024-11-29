@@ -2,6 +2,8 @@
 
 このプロジェクトは千葉工業大学未来ロボティクス学科ロボットシステム学2024の授業内で行われたものを改造して製作しています
 
+[![test](https://github.com/shota kaneko/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/shota kaneko/robosys2024/actions/workflows/test.yml)
+
 ## plus&fibonacci
 
 plusは数列の足し算をするプログラムです。
