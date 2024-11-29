@@ -6,6 +6,9 @@
 
 ## テスト環境
 
+- Ubuntu 24.04 LTS
+- Github Actions
+  - python: 3.7~3.10
 
 
 ## plus&fibonacci
