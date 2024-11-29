@@ -28,6 +28,9 @@ out=$( ./fibonacci -3 )
 out=$( ./fibonacci 5 akakakakak )
 [ "$?" = 0 ] || ng "$LINENO"
 
+out=$( ./fibonacci 5 | ./plus )
+[ "$?" = 0 ] || ng "$LINENO"
+
 out=$( ./fibonacci "" )
 [ "$?" = 1 ] || ng "$LINENO"
 
