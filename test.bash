@@ -25,6 +25,12 @@ out=$( ./fibonacci 0 )
 out=$( ./fibonacci -3 )
 [ "$?" = 0 ] || ng "$LINENO"
 
+out=$( ./fibonacci 5 akakakakak )
+[ "$?" = 0 ] || ng "$LINENO"
+
+out=$( ./fibonacci "" )
+[ "$?" = 1 ] || ng "$LINENO"
+
 out=$( ./fibonacci 3.5 )
 [ "$?" = 1 ] || ng "$LINENO"
 
@@ -35,6 +41,9 @@ out=$( ./fibonacci )
 [ "$?" = 1 ] || ng "$LINENO"
 
 out=$( ./fibonacci ? )
+[ "$?" = 1 ] || ng "$LINENO"
+
+out=$( ./fibonacci 3a )
 [ "$?" = 1 ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
