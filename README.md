@@ -4,6 +4,10 @@
 
 [![test](https://github.com/komugip1000/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/komugip1000/robosys2024/actions/workflows/test.yml)
 
+## テスト環境
+
+
+
 ## plus&fibonacci
 
 plusは数列の足し算をするプログラムです。
@@ -13,9 +17,9 @@ fibonacciはフィボナッチ数列を生成するプログラムです。
 ## インストール方法
 
 以下の手順でプロジェクトをローカル環境にインストールしてください。
-
+```shell
 $ git clone https://github.com/komugip1000/robosys2024.git
-
+```
 
 ## fibonacci 概要
 
@@ -29,14 +33,14 @@ $ git clone https://github.com/komugip1000/robosys2024.git
 
 注意　20577以上の数字を入れると計算結果が4300桁以上になるのでエラーが出る
 
-
+```
 $ ./fibonacci 5
 1
 1
 2
 3
 5
-
+```
 
 ## plus 概要
 
